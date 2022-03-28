@@ -13,6 +13,10 @@ def root():
 def about():
   return render_template ("about.html")
 
+@app.route('/test',methods = ['POST', 'GET'])
+def test():
+  parametri = ["IQ","Augums","Kājas izmērs"]
+    return render_template("test.html",parametri=parametri)
 
 #Pārbaudes lapa, lai saprastu, ka kods vispār strādā
 @app.route('/health')
@@ -21,3 +25,4 @@ def health():
 
 if __name__ == '__main__':
   app.run(debug="true")
+
