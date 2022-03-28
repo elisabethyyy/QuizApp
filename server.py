@@ -16,7 +16,8 @@ def about():
 @app.route('/test',methods = ['POST', 'GET'])
 def test():
   parametri = ["IQ","Augums","Kājas izmērs"]
-    return render_template("test.html",parametri=parametri)
+  images = [https://media.wired.com/photos/5cdefb92b86e041493d389df/2:1/w_1500,h_750,c_limit/Culture-Grumpy-Cat-487386121.jpg]
+    return render_template("test.html",parametri=parametri,images=images)
 
 #Pārbaudes lapa, lai saprastu, ka kods vispār strādā
 @app.route('/health')
